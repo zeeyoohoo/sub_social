@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>사회에서</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<script type="text/javascript" src="wow.min.js"></script>
+	<style type="text/css">
+		html{scroll-behavior: smooth;}
+		body{background-color: #002fed;}
+		header{height: 50px;}
+		section{}
+		.row{width:1000px; margin:auto;padding:10px;position: relative;}
+		img{display: block;}
+		.a{width: 200px;padding-left: 20px;position: fixed;}
+		.b{margin: auto;height: 700px;position: center;position: fixed;left: 470px;}
+		.c{margin: auto;width: 850px; margin-top: -20px;position: center;position: fixed;left: 390px;top: 750px;}
+		.d{height: 700px;}
+		.absolute{position: absolute; display: block;}
+		.lft{animation:lft 2s;}
+		.rgt{animation:rgt 2s}
+		@keyframes lft{from{opacity: 0; margin-left: -500px;} to{opacity: 1; margin-right: 700px;}}
+		@keyframes rgt{from{opacity: 0; margin-left: 1500px;} to{opacity: 1; margin-left: 500px;}}
+	</style>
+</head>
+<body>
+	<header>
+		<img src="subtitle.png" class="a">
+	</header>
+	<section>
+		<img src="social.png" class="b">
+		<img src="insocial.png" class="c">
+	</section>
+	<section>
+		<div class="row">
+			<div class="absolute">
+				<img src="s1.png" class="d wow lft">
+				<img src="s2.png" class="d wow rgt">
+			</div>
+		</div>	
+	</section>
+	<script type="text/javascript">
+	new WOW().init();
+    console.log("ok");
+	</script>
+</body>
+</html>
